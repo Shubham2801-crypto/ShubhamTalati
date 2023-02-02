@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+
+    <h2>Arithmetic Operators:</h2>
+    <button onclick="oprtr()">+ opertors</button><br><br>
+    <button onclick="oprtr1()">- opertors</button><br><br>
+    <button onclick="oprtr2()">* opertors</button><br><br>
+    <button onclick="oprtr3()">/ opertors</button><br><br>
+
+    <button onclick="oprtr4()">% opertors</button><br><br>
+    <button onclick="oprtr5()">** opertors</button><br><br>
+    <button onclick="oprtr6()">++ opertors</button><br><br>
+
+    <h2>Assignment Operators:</h2>
+    <button onclick="assign1()">+= opertors</button><br><br>
+    <button onclick="assign2()">-= opertors</button><br><br>
+    <button onclick="assign3()">*= opertors</button><br><br>
+    <button onclick="assign4()">/= opertors</button><br><br>
+    <button onclick="assign5()">%= opertors</button><br><br>
+
+    <h2>Comparison Operators:</h2>
+    <button onclick="comp1()">== opertors</button><br><br>
+    <button onclick="comp2()">=== opertors</button><br><br>
+    <button onclick="comp3()">!= opertors</button><br><br>
+    <button onclick="comp4()">!== opertors</button><br><br>
+    <button onclick="comp5()">> opertors</button><br><br>
+    <button onclick="comp6()"> < opertors</button><br><br>
+     <button onclick="comp7()">>= opertors</button><br><br>
+    <button onclick="comp8()"><= opertors</button><br><br>
+
+     <h2>Conditional (Ternary) Operators:</h2>
+    <button onclick="condtonl()">? : opertors</button><br><br>
+
+    <h2>Logical  Operators:</h2>
+    <button onclick="logic1()">&& opertors</button><br><br>
+    <button onclick="logic2()">|| opertors</button><br><br>
+    <button onclick="logic3()">! opertors</button><br><br>
+
+</head>
+
+<body>
+    <script>
+        function oprtr() {
+
+            alert("The + opertors: " + (10 + 20));
+        }
+
+        function oprtr1() {
+
+            alert("The - opertors: " + (20 - 10));
+        }
+
+        function oprtr2() {
+            alert("The * opertors: " + (10 * 20));
+        }
+
+        function oprtr3() {
+
+            alert("The / opertors: " + (20 / 10));
+        }
+
+        function oprtr4() {
+
+            alert("The % opertors: " + (5 % 2));
+        }
+
+        function oprtr5() {
+
+            alert("The ** opertors: " + (2 ** 2));
+        }
+
+
+        function assign1() {
+            let x = 10;
+            let y = 20;
+            x += y;
+            alert("The += opertors: " + x);
+        }
+        function assign2() {
+            let x = 20;
+            let y = 10;
+            x -= y;
+            alert("The -= opertors: " + x);
+        }
+
+        function assign3() {
+            let x = 10;
+            let y = 20;
+            x *= y;
+            alert("The *= opertors: " + x);
+        }
+        function assign4() {
+            let x = 20;
+            let y = 10;
+            x /= y;
+            alert("The /= opertors: " + x);
+        }
+
+        function assign5() {
+            let x = 5;
+            let y = 2;
+            x %= y;
+            alert("The %= opertors: " + x);
+        }
+        function comp1() {
+            alert("The == opertors: " + (2 == 2));
+        }
+        function comp2() {
+            alert("The === opertors: " + (2 === 2));
+        }
+        function comp3() {
+            alert("The != opertors: " + (2 != 2));
+        }
+
+        function comp4() {
+            alert("The !== opertors: " + (2 !== 2));
+        }
+        function comp5() {
+            alert("The > opertors: " + (2 > 1));
+        }
+        function comp6() {
+            alert("The < opertors: " + (2 < 2));
+        }
+        function comp7() {
+            alert("The >= opertors: " + (6 <= 2));
+        }
+        function comp8() {
+            alert("The <= opertors: " + (2 >= 2));
+        }
+
+
+        function condtonl() {
+            let a = 18
+            let b = (a >= 20) ? 'no' : '18+';
+            alert(b);
+        }
+
+        function logic1()
+        {
+            let x = 10;
+            let y = 20;
+
+            alert((x < 30 && y > 10) + "/" +
+            (x <30 && y < 10));
+        }
+
+        function logic2()
+        {
+            let x = 10;
+            let y = 20;
+
+           alert((x === 8 || y === 8) + "/" + 
+                (x === 10 || y === 9) + "/" + 
+                (x === 10 || y === 20));
+        }
+        function logic3()
+        {
+           
+            alert(!(10 == 20));
+
+        }
+    </script>
+
+</body>
+
+</html>

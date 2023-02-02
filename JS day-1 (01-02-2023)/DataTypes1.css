@@ -1,0 +1,75 @@
+.c1
+{
+    display: flex;
+    border: 2px solid black;
+     height: 100px;
+      width: 1340px;
+      
+}
+.c11{
+    color: white;
+    background-color: #4CAF50;
+    text-align: center;
+    padding: 15px 32px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-left: -250px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+  
+}
+h3{
+    margin-left: 10px;
+    border-left: 6px solid red;
+     background-color: lightgrey;
+     margin-bottom: 60px;
+}
+#demo{
+    background-color: lightgrey;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+#demo1{
+    background-color: lightgrey;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+#demo2{
+    background-color: lightgrey;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+#demo3{
+    background-color: lightgrey;
+    margin-left: 20px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+#demo4{
+    background-color: lightgrey;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+#demo5{
+    background-color: lightgrey;
+    margin-left: 20px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+#demo6{
+    margin-left: 20px;
+    margin-top: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+

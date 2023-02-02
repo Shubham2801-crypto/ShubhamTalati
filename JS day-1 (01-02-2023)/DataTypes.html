@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTypes</title>
+    <link rel="stylesheet" href="DataTypes1.css">
+
+    <!-- <button onclick="str()">Click me</button> -->
+    <div class="c1">
+        <h3>Click On Button To Display String</h3>
+        <button onclick="str()" class="c11"> String</button>
+        <p id="demo"></p>
+    </div> <br> <br>
+   
+    <div class="c1">
+        <h3>Click On Button To Display Number</h3> 
+    <button onclick="num()" class="c11"> Number</button><br><br>
+    <p id="demo1"></p>
+    </div> <br> <br>
+</div>
+
+<div class="c1">
+    <h3>Click On Button To Display BigInt</h3> 
+    <button onclick="int()" class="c11"> BigInt</button><br><br>
+    <p id="demo2"></p>
+    </div> <br> <br>
+</div>
+<div class="c1">
+    <h3>Click On Button To Display Boolean</h3> 
+    <button onclick="bool()" class="c11"> Boolean</button><br><br>
+    <p id="demo3"></p>
+    </div> <br> <br>
+</div>
+    <div class="c1">
+        <h3>Click On Button To Display undefine</h3> 
+    <button onclick="undefine()" class="c11"> undefine</button><br><br>
+    <p id="demo4"></p>
+    </div> <br> <br>
+</div>
+    <div class="c1">
+        <h3>Click On Button To Display Object</h3> 
+    <button onclick="obj()" class="c11"> Object</button><br><br>
+    <p id="demo5"></p>
+    </div> <br> <br>
+</div>
+    <div class="c1">
+        <h3>Click On Button To Display Array</h3> 
+    <button onclick="arr()" class="c11"> Array</button><br><br>
+    <p id="demo6"></p>
+    </div> <br> <br>
+</div>
+    <div class="c1">
+        <h3>Click On Button To Display Typeof</h3> 
+    <button onclick="typ()" class="c11"> Typeof</button><br><br>
+    </div>
+   
+
+   
+    
+</head>
+<body bgcolor="gray">
+    <script>
+        function str()
+        {
+            let fname =  "Shubham";
+            let lname = "Talati";
+            let fullname = fname + lname;
+            document.getElementById("demo").innerHTML =  "FullName: "+fullname;
+        }
+        
+        function num()
+        {
+            let a =  10;
+            let b = 20;
+           // let c = a + b;
+           document.getElementById("demo1").innerHTML =  "Numbers: "+a+" & "+b;
+           
+        }
+
+        function int()
+        {
+            let a = BigInt("1234567890");
+            document.getElementById("demo2").innerHTML =  "BigInt: "+a;
+           // document.write("BigInt: "+a);
+        }
+
+        function bool()
+        {
+            let a = 10;
+            let b = 10;
+            let c = 20;
+
+            document.getElementById("demo3").innerHTML =  (a==b)+ "<br>"+(a==c);
+           // document.write((a==b)+ "<br>"+(a==c));
+        }
+        function undefine()
+        {
+            let a;
+            document.getElementById("demo4").innerHTML =  "value Not assign: "+a;
+            //document.write("value Not assign: "+a);
+        }
+
+        function obj()
+        {
+            const name = {fname: "shubham", lname: "Talati", age: 22};
+            document.getElementById("demo5").innerHTML =  "FirstName:  " +name.fname+" <br>Age: "+name.age;
+            //document.write("FirstName:  " +name.fname+" <br>Age: "+name.age);
+        }
+
+        function arr()
+        {
+            const array = ["AAA","BBB","CCC"];
+            document.getElementById("demo6").innerHTML = array[0], array[2];
+           // document.write(array[0], array[2]);
+        }
+
+        function typ()
+        {
+            document.write("Shubham is: "+typeof("Shubham")+ "<br>" );
+            document.write("38 is: "+typeof(38)+ "<br>" );
+            document.write("Nan is: "+typeof NaN + "<br>" );
+            document.write("Null is: "+typeof null + "<br>" );
+            document.write("Name is: "+typeof Name + "<br>" );
+            document.write("True is: "+typeof true + "<br>" );
+            document.write(" {name:'Shubham', age:22} is: "+ typeof {name:'Shubham', age:22} + "<br>" );
+            document.write("date is: "+typeof new Date() + "<br>" );
+            document.write("function is: "+ typeof function () {} + "<br>" );
+            
+
+        }
+        
+    </script>
+</body>
+</html>
