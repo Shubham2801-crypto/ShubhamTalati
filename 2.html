@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <input type="text" name="text" id="one"><br><br>
+
+    <button onclick="disp()">Submit</button> -->
+</head>
+
+<body>
+    <script>
+
+        
+
+           // var a = document.getElementById("one").value;
+           var a = prompt("Enter a Value");
+            if (a == "") {
+                document.write("Please enter any numeric value");
+            }
+            else if (isNaN(a) && typeof a != 'number'  ) {
+                document.write("Entered value is a numeric value.");
+            }
+
+            else {
+                document.write("Only numeric values are allowed. Please re-enter the value");
+            }
+       
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>JavaScript date validation</title>
+<script type="text/javascript">
+function validateDate(text)
+{
+	var pattern =  /^(0?[1-9]|1[0-2])[\-](0?[1-9]|[1-2][0-9]|3[01])[\-]\d{4}$/;
+    ///^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+	
+	if(text.value.match(pattern)) 
+	{
+		document.frm.txt.focus();
+		var opera2 = text.value.split('-');
+		lopera2 = opera2.length;
+		
+		
+		 if(lopera2>1) {
+			var pdate = text.value.split('-');
+		}
+		//Colecting day, month and year information
+		var dd = parseInt(pdate[0]);
+		var mm = parseInt(pdate[1]);
+		var yy = parseInt(pdate[2]);
+		
+		if(mm==1||mm==3||mm==5||mm==7||mm==8||mm==10||mm==12) { 
+		    //For the months of January, March, May, July, August, October and December
+			if(dd>31) {
+				alert("Invalid date. Please enter date in MM-DD-YYYY format");
+				return false;
+			}
+		}
+		else if(mm==4||mm==6||mm==9||mm==11) {
+			//For the months of April, June, September and November
+			if(dd>30) {
+				alert("Invalid month. Month should be within the range 1 to 12");
+				return false;
+			}
+		}
+		//For the month of February
+		else if(mm==2 && dd<=29) {
+			var s = false;
+			if(yy%400==0 || (yy%100!=0 && yy%4==0))
+				s = true;
+			if(s==false)
+				alert("Invalid date format!");
+			return s;
+		}
+		else if(mm==2 && dd>29) {
+			alert('Invalid date format!');
+			return false;
+		}
+	}
+	else 
+	{
+		alert("Please enter date in MM-DD-YYYY format");
+		document.frm.txt.focus();
+		return false;
+	}	
+}
+</script>
+</head>
+<body onload='document.frm.txt.focus()'>
+<h2>Input a date and Submit</h2>
+<form name="frm" action="8.html" onSubmit="return validateDate(document.frm.txt)">
+<input types="text" name ="txt"/>
+<br><br>
+<input type="submit" name="submit" value="Submit"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <form action="" method="post">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    Please enter first number : <input type="number" name="fone" id="one" value=""><br><br>
+    Please enter second number : <input type="number" name="sone" id="two" value=""><br><br>
+
+    Please select operation you want to perform :
+    <div>
+        <input type="radio" name="math" id="" value="">Addition <br>
+        <input type="radio" name="math" id="" value="">Subtraction <br>
+        <input type="radio" name="math" id="" value="">Multiplication <br>
+        <input type="radio" name="math" id="" value="">Division <br>
+        
+    </div>
+    <input type="button" value="Calculate" onclick="disp()"> 
+   <input type="reset" value="Reset">
+</form>
+
+    <p id="demo"></p>
+</head>
+<body>
+    <script>
+        function disp()
+        {
+            let ans = document.getElementsByName("math");
+            let first = document.getElementById("one").value;
+            let sec = document.getElementById("two").value;
+            let e;
+
+
+            if(first == "" && sec == "")
+            {
+                document.getElementById("demo").innerHTML = "Please enter first number or Please enter second number";
+              
+            }
+
+           else if(ans[0].checked)
+            {
+               let sum = parseInt(first)+parseInt(sec);
+                document.getElementById("demo").innerHTML = "Result is : "+sum;
+                
+            }
+           else if(ans[1].checked)
+            {
+               let sum = parseInt(first)-parseInt(sec);
+                document.getElementById("demo").innerHTML = "Result is : "+sum;
+                
+            }
+           else if(ans[2].checked)
+            {
+               let sum = parseInt(first)*parseInt(sec);
+                document.getElementById("demo").innerHTML = "Result is : "+sum;
+                
+            }
+            else if(ans[3].checked)
+            {
+               let sum = parseInt(first)/parseInt(sec);
+                document.getElementById("demo").innerHTML = "Result is : "+sum;
+                
+            }
+
+            else
+            {
+                document.getElementById("demo").innerHTML = "Please select the operation you want to perform";
+            }
+        }
+    </script>
+</body>
+</html>
